@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de cadastro">
+    <link rel="icon" href="../img/Cover_CodeIgualUmKenzieAcademy.png">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <main>
+        <section id="titulo">
+            <h1 style="color:teal">Faça seu cadastro</h1>
+        </section>
+        <section id="formulario">
+            <form>
+                <label for="foto-perfil" style="color:teal">Foto de perfil</label>
+                <input type="file" name="foto-perfil" id="foto-perfil" accept=".png, .jpeg, .gif, .jpg" required>
+                    <br>
+                
+                <label for="nome-usuario" style="color:teal">Nome de usuário</label>
+                <input type="text" name="nome-usuario" id="nome-usuario" placeholder="Seu nome de usuário"  required>
+                    <br>
+                
+                <label for="email" style="color:teal">Email</label>
+                <input type="email" name="email" id="email" placeholder="Seu email preferido" required>
+                    <br>
+                
+                <label for="senha" style="color:teal">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required minlength="8" title="Deve conter minúscula, maiúscula, símbolo e número (mas eu não sei como fazer isso ser necessário">
+                    <br>  
+                
+                <p style="color:teal">Quer receber nossas notícias?</p>
+                <input type="radio" name="newsl" id="newsl-s" required>
+                <label for="newsl-s" style="color:teal">Sim</label>
+                <input type="radio" name="newsl" id="newsl-n" required>
+                <label for="newsl-n" style="color:teal">Não</label>
+                    <br>
+                
+                <button type="submit" style="color:teal">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+        <hr style="color:navy">
+        <section id="newsletter-separado">
+            <h2 style="color:navy">Quer receber nossas notícias mesmo sem cadastro?</h2>
+            <form>
+                <label for="email-newsl" style="color:navy">Email</label>
+                <input type="email" name="email-newsl" id="email-newsl" placeholder="Seu email preferido">
+                    <br>
+                <button type="submit" style="color:navy">Quero receber!</button>
+            </form>
+        </section>
+</body>
+</html>
