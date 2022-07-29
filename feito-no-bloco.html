@@ -4,15 +4,39 @@
 <meta charset="UTF-8">
 <meta name="X-UA-compatible" content="IE-edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Testando com o bloco de notas">
+<meta name="description" content="Testando com o bloco de notas e brincando com CSS">
 <link rel="icon" href="./img/Cover_CodeIgualUmKenzieAcademy.png">
 <title>Fazendo com bloco de notas, vamo ver como fica</title>
 </head>
+<style>
+body {
+	background-color: lightblue;
+  }
+  h1 {
+	text-align: center
+	}
+  p {
+	text-align: justify;
+	text-align: center;
+	font-family: sans-serif;
+	color: #008080;
+  }
+  #nao-html{
+	background-color: rgba(0, 0, 0, 0.2);
+  }
+  table {
+	border-style: inset;
+	border: 2px solid teal;
+	border-radius: 5px;
+	padding: 12px;
 
+  }
+</style>  
 <body>
 	<section id="inicio">
 		<h1>Tentando com bloco de notas</h1>
 		<p>Testando fazer um código sem usar as extensões ou consultar documentação, só pra ver se eu consigo fazer com o que aprendi essa semana.</p>
+		<p>Esportes são uma parte muito importante para a <b>saúde física e mental</b>, seja a musculação, um esporte em equipe ou individual, a prática de esportes ajuda o corpo a liberar os hormônios de alegria e relaxamento.</p>
 	</section>
 	<section id="tabela">
 		<p>Não lembro como fazer tabela, bom rever.</p>
@@ -67,6 +91,51 @@
 			</select>
 			<button type="submit">Vamo jogar</button>
 		</form>
+	</section>
+	<section id="tabela-conhecimento">
+		<table border="2">
+			<tr>
+				<th colspan="3">HTML</th>
+			</tr>
+			<tr>
+				<th>Assunto</th>
+				<th>Nível de domínio</th>
+				<th>Necessidade de revisão</th>
+			</tr>
+			<tr>
+				<td>Tags</td>
+				<td>Médio</td>
+				<td>Diária</td>
+			</tr>
+			<tr>
+				<td>Tabelas</td>
+				<td>Baixíssimo</td>
+				<td>Diária</td>
+			</tr>
+			<tr>
+				<td>Links e imagens</td>
+				<td>Médio</td>
+				<td>A cada dois dias</td>
+			</tr>
+			<tr>
+				<td>Tags semânticas</td>
+				<td>Médio</td>
+				<td>Diária</td>
+			</tr>
+			<tr>
+				<td>Formulário</td>
+				<td>Médio-baixo</td>
+				<td>Diária</td>
+			</tr>
+			<tr id="nao-html">
+				<th colspan="3" style="color: #ffa050";><del>Não é bem HTML, mas tá safe, tá no S1</del></th>
+			</tr>
+			<tr>
+				<td>Git</td>
+				<td>Baixo-médio</td>
+				<td>Diária</td>
+			</tr>
+		</table>
 	</section>
 </body>
 </html>
